@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ClipboardList, CalendarCheck, PhoneCall, ArrowLeft, CheckCircle, MessageSquare } from "lucide-react";
+import { ClipboardList, CalendarCheck, PhoneCall, ArrowLeft, CheckCircle, MessageSquare, Scissors, TreePine, Hammer, Flower2, Layers, Leaf, Sparkles, Shovel } from "lucide-react";
 
 const OPTIONS = [
   {
@@ -208,15 +208,75 @@ export default function FunnelPage() {
         )}
       </div>
 
+      {/* Direktkontakt */}
+      <div className="bg-[#1a3a0a] px-4 py-10">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-white/60 text-sm uppercase tracking-widest font-semibold mb-2">Lieber direkt?</p>
+          <h2 className="text-white text-2xl font-bold mb-2">Rufen Sie uns an oder schreiben Sie uns auf WhatsApp</h2>
+          <p className="text-white/60 text-sm mb-8">Wir antworten in der Regel innerhalb weniger Stunden.</p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="tel:+4915901444621"
+              className="flex items-center justify-center gap-2.5 bg-white text-[#1a3a0a] font-bold px-6 py-4 rounded-2xl hover:bg-[#f0f8ea] transition-colors text-base"
+            >
+              <PhoneCall size={20} />
+              +49 1590 1444621
+            </a>
+            <a
+              href="https://wa.me/4915901444621"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe59] text-white font-bold px-6 py-4 rounded-2xl transition-colors text-base"
+            >
+              <MessageSquare size={20} fill="white" />
+              WhatsApp schreiben
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Leistungen */}
+      <div className="bg-[#F2F7ED] px-4 py-12">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-[#3a7d1e] text-sm uppercase tracking-widest font-semibold text-center mb-2">Was wir für Sie tun</p>
+          <h2 className="text-[#1a3a0a] text-2xl font-bold text-center mb-8">Alle Leistungen aus einer Hand</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {[
+              { icon: Scissors, label: "Heckenschnitt" },
+              { icon: TreePine, label: "Baumpflege & Baumfällung" },
+              { icon: Leaf, label: "Rasenmähen & Rasenpflege" },
+              { icon: Flower2, label: "Gartengestaltung" },
+              { icon: Shovel, label: "Bepflanzung & Beete" },
+              { icon: Layers, label: "Pflaster- & Wegebau" },
+              { icon: Sparkles, label: "Gartenreinigung" },
+              { icon: Hammer, label: "Zäune & Sichtschutz" },
+            ].map(({ icon: Icon, label }) => (
+              <div key={label} className="bg-white rounded-2xl p-4 border border-[#d0e8c0] flex flex-col items-center text-center gap-2.5 shadow-sm">
+                <div className="w-10 h-10 bg-[#eaf5e2] rounded-xl flex items-center justify-center">
+                  <Icon size={20} className="text-[#3a7d1e]" />
+                </div>
+                <p className="text-xs font-semibold text-[#1a3a0a] leading-snug">{label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-[#6a7a60] mt-6">
+            Sie haben etwas anderes im Sinn?{" "}
+            <button onClick={() => { setSelected(null); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-[#3a7d1e] font-semibold underline underline-offset-2">
+              Einfach anfragen →
+            </button>
+          </p>
+        </div>
+      </div>
+
       {/* Footer */}
-      <div className="text-center py-6 px-4 text-xs text-[#8a9a80] border-t border-[#d0e8c0]">
+      <div className="text-center py-6 px-4 text-xs text-[#8a9a80] border-t border-[#d0e8c0] bg-white">
         <p className="font-semibold text-[#4a5a40] mb-1">Green Boys – Baum & Gartenservice</p>
         <p>Bernau bei Berlin · Tätig im Umkreis von 50 km</p>
       </div>
 
       {/* WhatsApp button */}
       <a
-        href="https://wa.me/49"
+        href="https://wa.me/4915901444621"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] hover:bg-[#1ebe59] text-white rounded-full shadow-lg flex items-center justify-center transition-colors z-50"
