@@ -4,11 +4,11 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata = {
-  title: "Green Boys – Baum & Gartenservice Barnim",
-  description: "Professioneller Gartenbau, Baumpflege und Gartengestaltung für Barnim und Umland. Tätig im Umkreis von 50 km um Bernau.",
+  title: "Gartenpflege & Baumpflege Bernau | Galabau Barnim",
+  description: "Gartenpflege, Baumpflege und Galabau in Bernau und Barnim. Tätig im Umkreis von 50 km – Angebot, Vor-Ort-Termin oder Rückruf anfragen.",
   openGraph: {
-    title: "Green Boys – Baum & Gartenservice Barnim",
-    description: "Ihr Gartenbau-Experte für Barnim und Umland. Angebot, Rückruf oder Vor-Ort-Termin – ganz einfach anfragen.",
+    title: "Gartenpflege & Baumpflege Bernau | Galabau Barnim",
+    description: "Gartenpflege, Baumpflege und Galabau in Bernau und Barnim. Tätig im Umkreis von 50 km – einfach anfragen.",
     images: [{ url: "/hero.jpg", width: 1000, height: 667 }],
   },
 };

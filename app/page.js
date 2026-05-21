@@ -70,7 +70,7 @@ export default function FunnelPage() {
           <p className="text-[#4a5a40] text-base leading-relaxed mb-6">
             Ihre Anfrage ist bei uns eingegangen. Wir melden uns so schnell wie möglich bei Ihnen.
           </p>
-          <p className="text-sm text-[#6a7a60]">Green Boys – Baum & Gartenservice · Bernau</p>
+          <p className="text-sm text-[#6a7a60]">Gartenpflege & Baumpflege Bernau · Bernau</p>
         </div>
       </div>
     );
@@ -84,7 +84,7 @@ export default function FunnelPage() {
         <img src="/hero.jpg" alt="Schöner Garten" className="w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#F2F7ED]" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center">
-          <img src="/team.jpg" alt="Green Boys Team" className="hidden" />
+          <img src="/team.jpg" alt="Gartenpflege Team Bernau" className="hidden" />
           <div className="inline-flex items-center gap-2 bg-[#3a7d1e] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-3 shadow">
             <span>🌿</span> Täglich im Einsatz für Barnim & Umland
           </div>
@@ -110,7 +110,7 @@ export default function FunnelPage() {
         {!selected ? (
           <>
             <p className="text-center text-[#4a5a40] text-base mb-8">
-              <strong className="text-[#1a3a0a]">Green Boys – Baum & Gartenservice.</strong><br />
+              <strong className="text-[#1a3a0a]">Gartenpflege & Baumpflege Bernau.</strong><br />
               Wie dürfen wir Ihnen helfen?
             </p>
 
@@ -270,7 +270,7 @@ export default function FunnelPage() {
 
       {/* Footer */}
       <div className="text-center py-6 px-4 text-xs text-[#8a9a80] border-t border-[#d0e8c0] bg-white">
-        <p className="font-semibold text-[#4a5a40] mb-1">Green Boys – Baum & Gartenservice</p>
+        <p className="font-semibold text-[#4a5a40] mb-1">Gartenpflege & Baumpflege Bernau</p>
         <p>Bernau bei Berlin · Tätig im Umkreis von 50 km</p>
       </div>
 
